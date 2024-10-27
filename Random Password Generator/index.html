@@ -7,41 +7,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Generate a Random Password</h1>
-    <br />
+    <section class="center">
+      <h1>Generate a Random Password</h1>
+      <br />
 
-    <form class="center">
-      <div>
-        <label for="length">Password Length</label>
-        <input type="number" id="length" name="length" min="4" max="100" />
-      </div>
-
-      <div>
-        <p>Select password properties: </p>
-        <div>
-          <label for="lowercase">Lowercase Characters</label>
-          <input type="checkbox" name="lowercase" id="lowercase" />
+      <form class="center">
+        <div class="pwd-legnth">
+          <label for="length"><strong>Password Length</strong></label>
+          <input type="number" id="length" name="length" min="4" max="100" value="8"/>
         </div>
 
-        <div>
-          <label for="uppercase">Uppercase Characters</label>
-          <input type="checkbox" name="uppercase" id="uppercase" />
+        <div class="checkboxes">
+          <p><strong>Select password properties:</strong></p>
+          <div>
+            <input type="checkbox" name="lowercase" id="lowercase" checked/>
+            <label for="lowercase">Lowercase Characters</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="uppercase" id="uppercase" />
+            <label for="uppercase">Uppercase Characters</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="numbers" id="numbers" />
+            <label for="nubmers">Numbers (0-9)</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="special" id="special" />
+            <label for="special">Special Characters</label>
+          </div>
         </div>
-
-        <div>
-          <label for="nubmers">Numbers (0-9)</label>
-          <input type="checkbox" name="numbers" id="numbers" />
-        </div>
-
-        <div>
-          <label for="special">Special Characters</label>
-          <input type="checkbox" name="special" id="special" />
-        </div>
-
-      </div>
-    </form>
-
-    <button>Generate Password</button>
+        <div id="password"></div>
+        <br />
+        <button>Generate Password</button>
+      </form>
+    </section>
 
     <script src="script.js"></script>
   </body>
