@@ -63,5 +63,5 @@ function generatePassword() {
   }
 
   const pwdString = pwd.join("");
-  document.getElementById("password").innerHTML ="<p>" + pwdString + "<p>"
+  document.getElementById("password").innerHTML = "<p>" + pwdString + "<p>";
 }
