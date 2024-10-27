@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Password Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Generate a Random Password</h1>
-    <br>
+    <br />
 
-    <form class = "center">
-        <label for = "length">Password Length</label>
-        <input type="number" id = "length" name = "length" min ="4" max = "100">
-        <label for="lowercase">Lowercase Characters</label>
-        <input type="checkbox" name="lowercase" id="lowercase">
+    <form class="center">
+      <div>
+        <label for="length">Password Length</label>
+        <input type="number" id="length" name="length" min="4" max="100" />
+      </div>
 
-        <label for="uppercase">Uppercase Characters</label>
-        <input type="checkbox" name="uppercase" id="uppercase">
+      <div>
+        <p>Select password properties: </p>
+        <div>
+          <label for="lowercase">Lowercase Characters</label>
+          <input type="checkbox" name="lowercase" id="lowercase" />
+        </div>
 
-        <label for="nubmers">Numbers (0-9)</label>
-        <input type="checkbox" name="numbers" id="numbers">
+        <div>
+          <label for="uppercase">Uppercase Characters</label>
+          <input type="checkbox" name="uppercase" id="uppercase" />
+        </div>
 
-        <label for="special">Special Characters</label>
-        <input type="checkbox" name="special" id="special">
+        <div>
+          <label for="nubmers">Numbers (0-9)</label>
+          <input type="checkbox" name="numbers" id="numbers" />
+        </div>
+
+        <div>
+          <label for="special">Special Characters</label>
+          <input type="checkbox" name="special" id="special" />
+        </div>
+
+      </div>
     </form>
 
     <button>Generate Password</button>
 
-
     <script src="script.js"></script>
-
-    
-</body>
+  </body>
 </html>
