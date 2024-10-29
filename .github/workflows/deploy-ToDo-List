@@ -1,0 +1,21 @@
+# .github/workflows/deploy-to-do-list.yml
+name: Deploy To Do List Program
+
+on:
+  push:
+    branches:
+      - main  # Trigger this action when changes are pushed to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Deploy To Do List Program
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./To do list program  # Path to the To Do List Program folder
+          destination_dir: to-do-list-program  # This will be the URL subdirectory
