@@ -1,11 +1,12 @@
 const resultText = document.getElementsByClassName("result-text")[0];
 
-function onNumberPressed{
+function onNumberPressed(number){
     if(number === "."){
-        if(resultText.innerHTML.length===0) return
-        if (returnText.innerHTML.includes(".")) return
+        if((resultText.innerHTML.length===0) && returnText.innerHTML.includes("."))
+            return;
         
     }
 
-    resultText.innerHTML += Number.toString();
+    resultText.innerHTML += number.toString();
 }
+
