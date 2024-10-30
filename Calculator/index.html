@@ -14,10 +14,10 @@
     </div>
 
     <div class = "row grey">
-        <button class = "btn">+</button>
-        <button class = "btn">-</button>
-        <button class = "btn">x</button>
-        <button class = "btn">/</button>
+        <button class = "btn" onclick = "onOperationPressed('+')">+</button>
+        <button class = "btn" onclick = "onOperationPressed('-')">-</button>
+        <button class = "btn" onclick = "onOperationPressed('x')">x</button>
+        <button class = "btn" onclick = "onOperationPressed('/')">/</button>
     </div>
 
     <div class = "main-btns">
@@ -43,11 +43,11 @@
             <div class = "row">
                 <button class = "btn" onclick = "onNumberPressed(0)">0</button>
                 <button class = "btn" onclick = "onNumberPressed('.')">.</button>
-                <button class = "btn">c</button>
+                <button class = "btn" onclick = "onOperationPressed(c)">c</button>
             </div>
         </div>
 
-        <button class = "btn equal-btn">=</button>
+        <button class = "btn equal-btn" onclick = "onOperationPressed('=')">=</button>
 
     </div>
 
