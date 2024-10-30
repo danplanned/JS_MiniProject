@@ -2,6 +2,14 @@ h1{
     text-align: center;
 }
 
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .score-tracker{
     display: flex;
     justify-content: space-between;
@@ -15,7 +23,7 @@ h1{
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 45%;
+    width: 100%;
     padding: 10px;
     border: 2px solid black;
 }
@@ -32,11 +40,12 @@ h1{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 .options button{
     width: 30%;
+    height: 50px;
 }
 
 #rock{
