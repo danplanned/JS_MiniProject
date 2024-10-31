@@ -13,36 +13,45 @@
       <div class="score-tracker">
         <div class="your-score">
           <p>Your Score</p>
-          <span id="your-score">your points</span>
+          <span id="human-score"></span>
         </div>
 
         <div class="computer-score">
           <p>Computer Score</p>
-          <span id="pc-score">pc points</span>
+          <span id="pc-score"></span>
         </div>
       </div>
 
       <br /><br /><br />
 
       <div class="options">
-        <button class="btn" id="rock" onclick = "onOptionPressed('rock')">Rock</button>
-        <button class="btn" id="paper" onclick = "onOptionPressed('paper')">Paper</button>
-        <button class="btn" id="scissors" onclick = "onOptionPressed('scissors')">Scissors</button>
+        <button class="btn" id="rock" onclick="onOptionPressed('rock')">
+          Rock
+        </button>
+        <button class="btn" id="paper" onclick="onOptionPressed('paper')">
+          Paper
+        </button>
+        <button class="btn" id="scissors" onclick="onOptionPressed('scissors')">
+          Scissors
+        </button>
       </div>
-    </div>
 
-    <br />
+      <br />
 
-    <div class="selection">
-      <div class="human-selection">
-        <p>You selected</p>
-        <span class = "box-result" id="human-select"></span>
+      <div class="selection">
+        <div class="human-selection">
+          <p>You selected</p>
+          <span class="box-result" id="human-select"></span>
+        </div>
+        <br /><br />
+        <div class="computer-selection">
+          <p>Computer selected</p>
+          <span class="box-result" id="pc-select"></span>
+        </div>
       </div>
-      <br /><br />
-      <div class="computer-selection">
-        <p>Computer selected</p>
-        <span class = "box-result" id="pc-select"></span>
-      </div>
+
+      <br /><br /><br />
+      <span id="comments">comment</span>
     </div>
 
     <script src="script.js"></script>
