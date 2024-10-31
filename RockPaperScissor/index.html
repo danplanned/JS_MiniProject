@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissor Game</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,9 +25,9 @@
       <br /><br /><br />
 
       <div class="options">
-        <button class="btn" id="rock">Rock</button>
-        <button class="btn" id="paper">Paper</button>
-        <button class="btn" id="scissor">Scissor</button>
+        <button class="btn" id="rock" onclick = "onOptionPressed('rock')">Rock</button>
+        <button class="btn" id="paper" onclick = "onOptionPressed('paper')">Paper</button>
+        <button class="btn" id="scissors" onclick = "onOptionPressed('scissors')">Scissors</button>
       </div>
     </div>
 
@@ -36,12 +36,12 @@
     <div class="selection">
       <div class="human-selection">
         <p>You selected</p>
-        <span class = "box-result" id="human-select"> You chose this option here</span>
+        <span class = "box-result" id="human-select"></span>
       </div>
       <br /><br />
       <div class="computer-selection">
         <p>Computer selected</p>
-        <span class = "box-result" id="pc-select"> Computer selected this option here</span>
+        <span class = "box-result" id="pc-select"></span>
       </div>
     </div>
 
