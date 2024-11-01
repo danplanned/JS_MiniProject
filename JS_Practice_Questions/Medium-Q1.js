@@ -22,3 +22,9 @@ function findUniqueCharacters(str) {
 }
 
 findUniqueCharacters("bubble");
+findUniqueCharacters("abcdef");
+findUniqueCharacters("aabbccdd");
+findUniqueCharacters("");
+findUniqueCharacters("!a b c! a");
+findUniqueCharacters("123412345");
+findUniqueCharacters("AaBbCc");
