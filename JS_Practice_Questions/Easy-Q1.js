@@ -5,8 +5,8 @@ temperature in Celsius and F is the temperature in Fahrenheit.
 */
 
 function convertToFahrenheit(celsius) {
-    let fahrenheit = celsius * (9/5) + 32;
-    console.log(fahrenheit);
+  let fahrenheit = celsius * (9 / 5) + 32;
+  console.log(fahrenheit);
 }
 
 convertToFahrenheit(0);
