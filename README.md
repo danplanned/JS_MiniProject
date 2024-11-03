@@ -36,6 +36,14 @@ The classic **Rock Paper Scissors Game**—now in the browser! Challenge the com
 
 ---
 
+## 📚 Practice Questions Subfolder
+In addition to these projects, there is a **subfolder with a variety of practice questions** to further develop your coding skills! These questions cover common coding challenges and problems, designed to help reinforce your understanding of JavaScript and problem-solving.
+
+- **Contents**: Array manipulation, string processing, loops, conditionals, and more!
+- **Goal**: To help you get comfortable with JavaScript syntax, logic, and thinking through solutions step-by-step.
+
+---
+
 ## 🛠️ Getting Started
 Each project is contained within its own folder, so getting started is easy:
 1. **Clone the repository**: `git clone https://github.com/danplanned/JS_MiniProject.git`
